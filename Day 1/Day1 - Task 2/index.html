@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <form>
+    <label for="fname">Full Name:</label>
+    <input type="text" id="fname" name="fname"/>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"/>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"/>
+
+    <label for="cars">Choose a car:</label>
+
+    <select name="Role" id="Role">
+    <option value="Teacher">Teacher</option>
+    <option value="Student">Student</option>
+    <option value="Professional">Professional</option>
+    </select>
+
+    <p>Would you recommend GeeksforGeeks to a friend:</p>
+    <div class="input-pair">
+      <input type="radio" id="yes" name="recommend" value="Yes" />
+      <label for="yes">Yes</label>
+    </div>
+    <div class="input-pair">
+      <input type="radio" id="no" name="recommend" value="No" />
+      <label for="no">No</label>
+    </div>
+    <div class="input-pair">
+      <input type="radio" id="maybe" name="recommend" value="Maybe" />
+      <label for="maybe">Maybe</label>
+    </div>
+
+    <p>Languages known (check all that apply):</p>
+    <div class="input-pair">
+      <input type="checkbox" id="lang1" name="lang1" value="C" />
+      <label for="lang1">C</label>
+    </div>
+    <div class="input-pair">
+      <input type="checkbox" id="lang2" name="lang2" value="C++" />
+      <label for="lang2">C++</label>
+    </div>
+    <div class="input-pair">
+      <input type="checkbox" id="lang3" name="lang3" value="C#" />
+      <label for="lang3">C#</label>
+    </div>
+    <div class="input-pair">
+      <input type="checkbox" id="lang4" name="lang4" value="Java" />
+      <label for="lang4">Java</label>
+    </div>
+    <div class="input-pair">
+      <input type="checkbox" id="lang5" name="lang5" value="Python" />
+      <label for="lang5">Python</label>
+    </div>
+    <div class="input-pair">
+      <input type="checkbox" id="lang6" name="lang6" value="JavaScript" />
+      <label for="lang6">JavaScript</label>
+    </div>
+
+    <p>Any Suggestions or Comments</p>
+    <textarea name="message" rows="5" placeholder="Your suggestions here..."></textarea><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
